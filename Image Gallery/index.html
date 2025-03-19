@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 class="title" onclick="showGallery()">📸 Photo Gallery</h1>
+    </section>
+
+    <!-- Gallery Section (Initially Hidden) -->
+    <section id="gallery-section">
+        <div class="view-toggle">
+            <button class="btn" onclick="showHome()">🏠 Home</button>
+            <button class="btn" onclick="showGrid()">🔲 Grid View</button>
+            <button class="btn" onclick="showSlider()">🎞️ Slider View</button>
+            
+        </div>
+
+        <!-- Grid View -->
+        <div id="grid-view" class="gallery">
+            <div class="gallery-item"><img src="/images/download (1).jpeg" onclick="openSlider(0)"></div>
+            <div class="gallery-item"><img src="/images/download (2).jpeg" onclick="openSlider(1)"></div>
+            <div class="gallery-item"><img src="/images/download (3).jpeg" onclick="openSlider(2)"></div>
+            <div class="gallery-item"><img src="/images/download (4).jpeg" onclick="openSlider(3)"></div>
+            <div class="gallery-item"><img src="/images/download (6).jpeg" onclick="openSlider(5)"></div>
+            <div class="gallery-item"><img src="/images/download (7).jpeg" onclick="openSlider(6)"></div>
+            <div class="gallery-item"><img src="/images/download.jpeg" onclick="openSlider(7)"></div>
+            <div class="gallery-item"><img src="/images/images (1).jpeg" onclick="openSlider(8)"></div>
+            <div class="gallery-item"><img src="/images/images.jpeg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/download 8.jpeg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/download 9.jpeg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/download 10.jpg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/download 12.jpeg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/download 13.jpeg" onclick="openSlider(9)"></div>
+            <div class="gallery-item"><img src="/images/image grid and slider.jpg" onclick="openSlider(9)"></div>
+        </div>
+
+        <!-- Slider View -->
+        <div id="slider-view" class="slider-container">
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <img id="slider-img" src="">
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
